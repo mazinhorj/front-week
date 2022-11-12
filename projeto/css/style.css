@@ -290,7 +290,6 @@ i {
     text-transform: uppercase;
 }
 
-/* Depoimentos */
 #testemunhos {
     display: flex;
     align-items: center;
@@ -324,7 +323,6 @@ i {
     height: 100px;
 }
 
-/* Colaboradores */
 #time {
     position: relative;
     margin-bottom: 2rem;
@@ -367,7 +365,6 @@ i {
     margin: 0.5rem 0;
 }
 
-/* Contato */
 #contato {
     background-color: var(--primaria);
     gap: 0;
@@ -423,7 +420,6 @@ i {
     color: var(--primaria);
 }
 
-/* Rodapé */
 #rodape {
     color: var(--texto-primario);
     background-color: var(--qurta);
@@ -513,7 +509,22 @@ i {
     color: var(--secundaria);
 }
 
-/* Mobile navbar */
+#comenta {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--secundaria);
+    color: var(--terciaria);
+}
+
+#comenta a {
+    font-weight: 700;
+    color: var(--primaria);
+}
+
+#comenta a:hover {
+    text-decoration: underline;
+}
+
 #menu,
 #close-menu {
     font-size: 2rem;
@@ -555,9 +566,8 @@ i {
     border-bottom: 1px solid var(--primaria);
 }
 
-/* Responsivo */
 @media (max-width: 450px) {
-    /* Geral */
+
     body {
         overflow-x: hidden;
     }
@@ -567,7 +577,6 @@ i {
         font-size: 2rem;
     }
 
-    /* navbar */
     #navbar {
         display: none;
     }
@@ -590,7 +599,6 @@ i {
         font-size: 1rem;
     }
 
-    /* Áreas de atuação */
     .btn {
         align-self: initial;
     }
@@ -603,7 +611,6 @@ i {
         flex-wrap: wrap;
     }
 
-    /* Sobre nós */
     #sobre {
         gap: 0;
     }
@@ -628,13 +635,11 @@ i {
         border-bottom: 1px solid var(--texto-secundario);
     }
 
-    /* Depoimentos */
     .text-container {
         text-align: center;
         padding: 2rem;
     }
 
-    /* Colaboradores */
     #time {
         margin-top: 2rem;
     }
@@ -647,7 +652,6 @@ i {
         flex-wrap: wrap;
     }
 
-    /* Contato */
     #contato {
         padding-bottom: 0;
     }
@@ -664,7 +668,6 @@ i {
         align-self: auto;
     }
 
-    /* Rodapé */
     #rodape {
         flex-wrap: wrap;
     }
