@@ -507,6 +507,7 @@ i {
 
 .telefone-info {
     color: var(--secundaria);
+    text-align: center;
 }
 
 #comenta {
