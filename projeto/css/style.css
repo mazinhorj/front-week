@@ -6,6 +6,7 @@
     --primaria: #d92123;
     --secundaria: #868686;
     --terciaria: #eff3f4;
+    --qurta: #5c1011;
     --texto-primario:  #fff;
     --texto-secundario: #191919;
 }
@@ -83,6 +84,9 @@ input[type="submit"] {
 
 .banner p {
     font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+
 }
 
 .quadrado {
@@ -113,6 +117,7 @@ input[type="submit"] {
 
 .dot.active {
     background-color: var(--primaria);
+    transition: 0.5s;
 }
 
 i {
@@ -283,4 +288,410 @@ i {
 
 .texto {
     text-transform: uppercase;
+}
+
+/* Depoimentos */
+#testemunhos {
+    display: flex;
+    align-items: center;
+}
+
+#testemunho-info {
+    padding: 3rem;
+}
+
+.autor {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.autor .autor-nome {
+    color: var(--primaria);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.autor .autor-job {
+    color: var(--texto-secundario);
+}
+
+.autor img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Colaboradores */
+#time {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+#time h2 {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+#time h2 span {
+    color: var(--primaria);
+}
+
+#time .quadrado {
+    background-color: var(--terciaria);
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    top: -25px;
+}
+
+.colabs {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.colab-nome {
+    color: var(--primaria);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Contato */
+#contato {
+    background-color: var(--primaria);
+    gap: 0;
+    padding-bottom: 5rem;
+}
+
+#contato-info {
+    position: relative;
+    text-align: left;
+    padding: 3rem;
+    flex: 1 1 0;
+}
+
+#contato-info .section-subtitulo {
+    color: var(--texto-primario);
+}
+
+#contato-info i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--texto-primario);
+    color: var(--primaria);
+}
+
+#contato-info form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contato-info .form-controle {
+    display: flex;
+    gap: 1rem;
+}
+
+#contato-info input,
+#contato-info textarea {
+    flex: 0.5;
+    padding: 1rem;
+    border: none;
+}
+
+#contato-info .btn {
+    align-self: start;
+    border: 2px solid var(--texto-primario);
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+#contato-info .btn:hover {
+    background-color: var(--texto-primario);
+    color: var(--primaria);
+}
+
+/* Rodapé */
+#rodape {
+    color: var(--texto-primario);
+    background-color: var(--qurta);
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 3rem 5rem;
+}
+
+#rodape i {
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+#rodape a {
+    color: var(--texto-primario);
+}
+
+.contato-info,
+.links-container {
+    width: 20%;
+}
+
+.rodape-marca {
+    margin-bottom: 2rem;
+}
+
+.rodape-marca h2 {
+    background-color: var(--primaria);
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contato-info p {
+    margin-bottom: 1rem;
+}
+
+.subtext-rodape {
+    text-align: center;
+}
+
+.contato-info p i {
+    background-color: transparent;
+    padding: 0;
+    color: var(--primaria);
+}
+
+.social-networks p {
+    margin-bottom: 1rem;
+}
+
+.networks {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#rodape .networks i {
+    padding: 1rem;
+}
+
+.links-container h4 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.links-container nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.links-container nav a {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--secundaria);
+}
+
+.telefone-numero {
+    display: flex;
+    border: 1px solid var(--primaria);
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.telefone-info {
+    color: var(--secundaria);
+}
+
+/* Mobile navbar */
+#menu,
+#close-menu {
+    font-size: 2rem;
+    padding: 1rem;
+    display: none;
+}
+
+#close-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.88);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    transition: 0.4s;
+    z-index: 5;
+}
+
+#mobile-navbar.menu-active {
+    left: 0;
+
+}
+
+#mobile-navbar a {
+    color: var(--texto-primario);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--primaria);
+}
+
+/* Responsivo */
+@media (max-width: 450px) {
+    /* Geral */
+    body {
+        overflow-x: hidden;
+    }
+
+    i {
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+
+    /* navbar */
+    #navbar {
+        display: none;
+    }
+
+    #menu,
+    #close-menu {
+        display: block;
+    }
+
+    .banner {
+        max-width: 100%;
+        padding: 4rem 2rem;
+    }
+
+    .banner h2 {
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    /* Áreas de atuação */
+    .btn {
+        align-self: initial;
+    }
+
+    .image-container {
+        flex: 1 1 100%;
+    }
+
+    #outros-servicos {
+        flex-wrap: wrap;
+    }
+
+    /* Sobre nós */
+    #sobre {
+        gap: 0;
+    }
+
+    #texto-sobre,
+    #dados-sobre {
+        flex: 1 1 100%;
+    }
+
+    .sobre-descricao {
+        gap: 1rem;
+    }
+
+    .sobre-descricao i {
+        padding: 0;
+        min-width: 40px;
+    }
+
+    #sobre #dados-sobre .dado {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid var(--texto-secundario);
+    }
+
+    /* Depoimentos */
+    .text-container {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    /* Colaboradores */
+    #time {
+        margin-top: 2rem;
+    }
+
+    #time h2 {
+        font-size: 2.5rem;
+    }
+
+    .colabs {
+        flex-wrap: wrap;
+    }
+
+    /* Contato */
+    #contato {
+        padding-bottom: 0;
+    }
+
+    #contato-info {
+        padding: 7rem 1rem;
+    }
+
+    #contato-info .form-controle {
+        flex-direction: column;
+    }
+
+    #contato-info .btn {
+        align-self: auto;
+    }
+
+    /* Rodapé */
+    #rodape {
+        flex-wrap: wrap;
+    }
+
+    #rodape i {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .rodape-marca {
+        text-align: center;
+    }
+
+    .networks {
+        margin-bottom: 3rem;
+    }
+
+    .links-container {
+        margin-bottom: 1rem;
+    }
+
+    .links-container h4 {
+        margin-bottom: 1.5rem;
+    }
+
+    .contato-info,
+    .links-container {
+        width: 100%;
+    }
 }

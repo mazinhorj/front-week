@@ -7,6 +7,7 @@
     <title>Pearson Hardman</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <header id="header">
@@ -15,16 +16,35 @@
             <nav id="navbar">
                 <a href="#header">Início</a>
                 <a href="#servicos">Serviços</a>
-                <a href="#time">Time</a>
                 <a href="#sobre">Sobre</a>
+                <a href="#time">Time</a>
                 <a href="#contato">Contato</a>
             </nav>
             <!-- Menu mobile -->
+            <i id="menu" class="bi bi-list"></i>
+            <nav id="mobile-navbar">
+                <i id="close-menu" class="bi bi-x-lg"></i>
+                <a href="#header">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#time">Time</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
         <div class="banner active">
             <span class="quadrado"></span>
             <h2>Melhores experts em direito do país</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus perspiciatis dolore eaque sapiente maiores temporibus? Dolorem, fugiat distinctio! Eum saepe obcaecati corrupti repudiandae enim at beatae? Beatae, expedita obcaecati!</p>
+            <p class="bannerp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus perspiciatis dolore eaque sapiente maiores temporibus? Dolorem, fugiat distinctio! Eum saepe obcaecati corrupti repudiandae enim at beatae? Beatae, expedita obcaecati!</p>
+        </div>
+        <div class="banner">
+            <span class="quadrado"></span>
+            <h2>Texto Banner 2</h2>
+            <p class="bannerp">Itaque vitae excepturi iste dolor, ipsum accusantium omnis fugit nam! Ducimus harum omnis ratione magnam accusamus. Ipsa rem exercitationem distinctio est doloribus? Eum saepe obcaecati corrupti repudiandae enim at beatae? Beatae, expedita obcaecati! Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        </div>
+        <div class="banner">
+            <span class="quadrado"></span>
+            <h2>Texto Banner 3</h2>
+            <p class="bannerp">Dolorem, fugiat distinctio! Eum saepe obcaecati corrupti repudiandae enim at beatae? Beatae, expedita obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo possimus perspiciatis dolore eaque sapiente maiores temporibus? </p>
         </div>
         <div class="dots">
             <div class="dot active"></div>
@@ -35,7 +55,7 @@
     <main id="servicos" class="text-image-section">
         <div id="servico-info" class="text-container">
             <h3 class="section-titulo">Áreas de atuação</h3>
-            <p class="section-subtitulo">Nossos especialista podem ajudar você em Direito Civil, Ambiental e Empresarial.</p>
+            <p class="section-subtitulo">Nossos especialistas podem ajudar você em Direito Civil, Ambiental e Empresarial.</p>
             <a href="#" class="btn">Saiba mais</a>
         </div>
         <div id="servico-img-container" class="image-container">
@@ -111,5 +131,131 @@
             </div>
         </div>
     </section>
+    <!-- Depoimentos -->
+    <section id="testemunhos" class="text-image-section">
+        <div id="testemunho-info" class="text-container">
+            <p class="section-subtitulo">Depoimentos de clientes</p>
+            <h3 class="section-titulo">
+                A Pearson Hardman resolveu meu caso muito rápido, recomendo a todos.
+            </h3>
+            <div class="autor">
+                <div class="autor-info">
+                    <p class="autor-nome">Jhon Doe</p>
+                    <p class="autor-job">CEO da Empresa X</p>
+                </div>
+                <img src="img/author_1.jpg" alt="Jhon Doe" />
+            </div>
+            <h3 class="section-titulo">
+            O melhor escritório que eu já contratei, conseguimos resolver um caso
+            que durava décadas.
+            </h3>
+            <div class="autor">
+                <div class="autor-info">
+                    <p class="autor-nome">Paul Clinton</p>
+                    <p class="autor-job">Gerente de Projetos</p>
+                </div>
+                <img src="img/author_2.jpg" alt="Paul Clinton" />
+            </div>
+        </div>
+        <div id="testemunho-image-container" class="image-container">
+            <i class="bi bi-quote"></i>
+            <img src="img/court.jpg" alt="Advogado em um tribunal" />
+        </div>
+    </section>
+    <!-- Colaboradores -->
+    <section id="time">
+        <span class="quadrado"></span>
+        <h2>
+            A <span>Pearson Hardman</span> tem um time de especialistas a sua disposição
+        </h2>
+        <div class="colabs">
+            <div class="colab">
+                <img src="img/mike.jpg" alt="Mike Ross" />
+                <p class="colab-nome">Mike Ross</p>
+                <p class="colab-func">Advogado</p>
+            </div>
+            <div class="colab">
+                <img src="img/harvey.png" alt="Harvey Specter" />
+                <p class="colab-nome">Harvey Specter</p>
+                <p class="colab-func">Advogado Sênior</p>
+            </div>
+            <div class="colab">
+                <img src="img/louis.jpg" alt="Louis Litt" />
+                <p class="colab-nome">Louis Litt</p>
+                <p class="colab-func">Advogado</p>
+            </div>
+            <div class="colab">
+                <img src="img/jessica.jpg" alt="Jessica Pearson" />
+                <p class="colab-nome">Jessica Pearson</p>
+                <p class="colab-func">CEO</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contato -->
+    <section id="contato" class="text-image-section">
+        <div id="contato-image-container" class="image-container">
+            <img src="img/office.jpg" alt="Advogados no escritório" />
+        </div>
+        <div id="contato-info" class="text-container">
+            <i class="bi bi-envelope"></i>
+            <p class="section-subtitulo">Entre em contato</p>
+            <form>
+                <div class="form-controle">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" />
+                    <input type="email" name="email" id="email" placeholder="E-mail" />
+                </div>
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone" />
+                <textarea name="msg" id="msg" placeholder="Sua mensagem..."></textarea>
+                <input type="submit" value="Enviar" class="btn" />
+            </form>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer id="rodape">
+        <div class="contato-info">
+            <div class="rodape-marca">
+                <h2>Pearson Hardman</h2>
+                <p class="subtext-rodape">O advogado certo para a sua empresa</p>
+            </div>
+            <p><i class="bi bi-geo-alt"></i> Rua dos Advogados, 1415</p>
+            <p><i class="bi bi-telephone"></i> (99) 9999-9999</p>
+            <p><i class="bi bi-envelope"></i> contato@pearsonhardman.com</p>
+            <div class="social-networks">
+                <p>Siga-nos:</p>
+                <div class="networks">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="links-container">
+            <h4>Outros serviços</h4>
+            <nav>
+                <a href="#">Propriedade intelectual</a>
+                <a href="#">LGPD</a>
+                <a href="#">Direito internacional</a>
+                <a href="#">Processos</a>
+            </nav>
+        </div>
+        <div class="links-container">
+            <h4>Páginas</h4>
+            <nav>
+                <a href="#">Termos e condições</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Fale com um especialista</a>
+                <a href="#">FAQ</a>
+            </nav>
+        </div>
+        <div class="links-container">
+            <h4>Consulta grátis</h4>
+            <div class="telefone-numero">
+                <i class="bi bi-telephone"></i>
+                <p>(99) 9999-9999</p>
+            </div>
+            <p class="telefone-info">Este telefone é especial para tratar de casos já em andamento</p>
+        </div>
+    </footer>
 </body>
 </html>
